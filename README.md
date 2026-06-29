@@ -104,17 +104,24 @@ The expert system generates personalized solar recommendations based on user req
 
 ---
 
+
 ## Project Structure
 
 ```text
 Pakistan-Solar-ROI-Advisor/
-├── screenshots/
-├── solar_gui.py
-├── solar_engine.pl
+├── screenshots/          # Application screenshots used in the README
+├── solar_advisor/
+│   ├── appliances.pl      # Appliance knowledge base
+│   ├── batteries.pl       # Battery specifications and rules
+│   ├── city_data.pl       # City-specific weather and solar data
+│   ├── inverters.pl       # Inverter specifications
+│   ├── loadshedding.pl    # Load-shedding information
+│   ├── panels.pl          # Solar panel specifications
+│   ├── solar_engine.pl    # Main expert system and inference rules
+│   ├── solar_gui_prolog.py# Python + Gradio interface
+│   └── tariffs.pl         # NEPRA electricity tariff rules
 └── README.md
 ```
-
----
 
 ## Learning Outcomes
 
