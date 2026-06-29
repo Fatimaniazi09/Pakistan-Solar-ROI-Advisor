@@ -1,6 +1,16 @@
 # Pakistan Solar ROI Advisor
 
 <p align="center">
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/SWI--Prolog-E61B23?style=for-the-badge">
+<img src="https://img.shields.io/badge/Gradio-FFB000?style=for-the-badge">
+<img src="https://img.shields.io/badge/OpenWeatherMap-EB6E4B?style=for-the-badge">
+<img src="https://img.shields.io/badge/Artificial%20Intelligence-4B0082?style=for-the-badge">
+
+</p>
+
+<p align="center">
   <img src="screenshots/main_advisor_interface.png" width="320">
 </p>
 
