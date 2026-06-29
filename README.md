@@ -109,17 +109,17 @@ The expert system generates personalized solar recommendations based on user req
 
 ```text
 Pakistan-Solar-ROI-Advisor/
-├── screenshots/          # Application screenshots used in the README
+├── screenshots/          
 ├── solar_advisor/
-│   ├── appliances.pl      # Appliance knowledge base
-│   ├── batteries.pl       # Battery specifications and rules
-│   ├── city_data.pl       # City-specific weather and solar data
-│   ├── inverters.pl       # Inverter specifications
-│   ├── loadshedding.pl    # Load-shedding information
-│   ├── panels.pl          # Solar panel specifications
-│   ├── solar_engine.pl    # Main expert system and inference rules
-│   ├── solar_gui_prolog.py# Python + Gradio interface
-│   └── tariffs.pl         # NEPRA electricity tariff rules
+│   ├── appliances.pl      
+│   ├── batteries.pl       
+│   ├── city_data.pl       
+│   ├── inverters.pl       
+│   ├── loadshedding.pl    
+│   ├── panels.pl         
+│   ├── solar_engine.pl    
+│   ├── solar_gui_prolog.py
+│   └── tariffs.pl         
 └── README.md
 ```
 
