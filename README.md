@@ -1,173 +1,106 @@
 # Pakistan Solar ROI Advisor
 
-![Pakistan Solar ROI Advisor](screenshots/main_advisor_interface.png)
+<p align="center">
+  <img src="screenshots/main_advisor_interface.png" width="320">
+</p>
 
-Pakistan Solar ROI Advisor is an AI-powered expert system built using Python, SWI-Prolog, and Gradio that helps homeowners estimate the optimal rooftop solar installation for their energy needs. By combining rule-based reasoning, live weather data, and localized engineering calculations, the application recommends suitable solar systems, estimates installation costs, and calculates long-term financial savings.
+Pakistan Solar ROI Advisor is an AI-powered expert system that helps homeowners estimate the ideal rooftop solar installation based on their electricity usage, location, and energy requirements. Built using Python, SWI-Prolog, and Gradio, the application combines rule-based reasoning, live weather data, and engineering calculations to generate personalized solar recommendations, estimate installation costs, and calculate long-term return on investment.
 
-The project was developed to address a practical problem faced by many homeowners in Pakistan—obtaining accurate solar system recommendations often requires contacting multiple vendors, waiting for quotations, and comparing different opinions. Pakistan Solar ROI Advisor simplifies this process by providing intelligent, data-driven recommendations instantly through an interactive web application.
+The project was inspired by a common problem in Pakistan: homeowners often need to contact multiple solar companies, wait for quotations, and compare different recommendations before deciding on a system. Pakistan Solar ROI Advisor simplifies this process by acting as a virtual solar consultant, providing intelligent, data-driven recommendations instantly through an interactive web application.
 
 ---
 
 ## Overview
 
-Pakistan's growing energy demands and increasing electricity costs have led many homeowners to consider solar energy. However, determining the appropriate system size, expected installation cost, and financial return can be difficult without consulting multiple solar providers.
+The application analyzes electricity consumption, budget, city, and environmental conditions to recommend an appropriate solar system configuration. It estimates system size, panel count, inverter capacity, battery requirements, installation costs, monthly savings, and payback period while adapting recommendations using live weather information.
 
-Pakistan Solar ROI Advisor serves as a virtual solar consultant by combining artificial intelligence with real-world engineering knowledge. The application analyzes electricity usage, location, weather conditions, and financial goals to recommend a suitable solar installation while estimating monthly savings, return on investment, and equipment requirements.
+By combining artificial intelligence with practical engineering knowledge, the system makes solar planning faster, more accessible, and easier to understand for everyday users.
 
 ---
 
 ## Features
 
-### Intelligent Solar Recommendations
+### Intelligent Solar Planning
 
 - Personalized solar system sizing
 - Solar panel recommendations
-- Inverter selection
-- Battery capacity estimation
-- Installation cost calculation
+- Inverter and battery selection
+- Installation cost estimation
+- Monthly savings calculation
 - Return on Investment (ROI)
-- Payback period estimation
+- Payback period analysis
 
 ### AI Expert System
 
 - Rule-based reasoning using SWI-Prolog
-- Backward Chaining
-- Forward Chaining
+- Backward and Forward Chaining
 - Knowledge-based decision making
 - Python fallback when Prolog is unavailable
 
 ### Localized Recommendations
 
 - Support for major Pakistani cities
-- City-specific weather conditions
-- Temperature derating calculations
+- Temperature derating
 - Load-shedding considerations
 - Local market pricing
-
-### Financial Analysis
-
-- Electricity bill to energy consumption conversion
-- Monthly electricity savings
-- Installation cost estimation
-- Lifetime savings projection
-- Twenty-five-year ROI analysis
-
-### Weather Integration
-
-- Live weather using OpenWeatherMap API
-- Daily solar generation advice
-- Weather-aware appliance recommendations
-- Battery conservation suggestions
+- Live weather integration
 
 ---
 
 ## AI Reasoning
 
-### Backward Chaining
+The recommendation engine combines **Backward Chaining** and **Forward Chaining** to emulate the decision-making process of a solar consultant.
 
-The expert system begins with the user's desired outcome and works backward through the knowledge base to determine the optimal solar system size, number of panels, inverter rating, battery capacity, and expected financial return.
+Backward Chaining begins with the user's desired outcome and works backward through the knowledge base to determine the appropriate solar system size, panel count, inverter rating, battery capacity, and expected financial return.
 
-### Forward Chaining
+Forward Chaining uses live weather conditions to trigger production rules that generate practical recommendations for battery usage, appliance scheduling, and maximizing solar energy generation under different environmental conditions.
 
-Current weather conditions are converted into facts that trigger production rules to generate intelligent recommendations for battery usage, appliance scheduling, and energy conservation based on environmental conditions.
-
-### Engineering Heuristics
-
-The recommendation engine incorporates practical engineering assumptions including:
-
-- Standard inverter sizing
-- Temperature derating
-- Solar panel efficiency
-- Battery sizing based on load-shedding
-- Balance-of-system installation costs
-- Equipment sizing using real market specifications
+The system also incorporates engineering heuristics such as temperature derating, standard inverter sizing, battery sizing based on load-shedding duration, and equipment recommendations using real market specifications.
 
 ---
 
 ## Application Preview
 
-### Main Advisor Interface
+<table align="center">
+<tr>
 
-The main dashboard provides access to the Solar Calculator, Weather Advisor, and Market Comparison tools through a simple and interactive interface.
+<td align="center">
+<b>Solar Recommendation</b><br><br>
+<img src="screenshots/solar_recommendation_islamabad.png" width="280">
+</td>
 
-![Main Interface](screenshots/main_advisor_interface.png)
+<td align="center">
+<b>Weather Advisor</b><br><br>
+<img src="screenshots/weather_advisor_tab.png" width="280">
+</td>
 
----
+</tr>
+</table>
 
-### Solar Calculator
-
-Users enter their electricity bill, city, budget, and energy requirements to generate personalized solar recommendations.
-
-![Solar Calculator](screenshots/solar_calculator_inputs.png)
-
----
-
-### Hardware Recommendation
-
-Based on the user's requirements, the system recommends an appropriate solar system configuration, including panel count, inverter capacity, battery size, estimated installation cost, monthly savings, and expected return on investment.
-
-![Hardware Selection](screenshots/hardware_selection_view.png)
-
----
-
-### Solar Recommendation Results
-
-The expert system generates localized recommendations using engineering calculations and city-specific conditions.
-
-**Islamabad Recommendation**
-
-![Islamabad Recommendation](screenshots/solar_recommendation_islamabad.png)
-
-**Quetta Recommendation**
-
-![Quetta Recommendation](screenshots/solar_recommendation_quetta.png)
-
----
-
-### Weather Advisor
-
-The Weather Advisor integrates live weather information to provide recommendations that help users maximize solar energy production and improve battery management.
-
-![Weather Advisor](screenshots/weather_advisor_tab.png)
-
----
-
-### Market Comparison
-
-Users can compare different solar panel, battery, and inverter options based on price, specifications, and estimated performance.
-
-![Market Comparison](screenshots/market_comparison_tables.png)
+The expert system generates personalized solar recommendations based on user requirements and city-specific conditions, while the Weather Advisor integrates live weather data to provide practical guidance for improving solar generation and battery management.
 
 ---
 
 ## Technology Stack
 
-### Artificial Intelligence
+**Artificial Intelligence**
 
 - SWI-Prolog
+- Rule-Based Expert Systems
 - Backward Chaining
 - Forward Chaining
-- Rule-Based Expert Systems
 
-### Programming Language
+**Programming Language**
 
 - Python
 
-### User Interface
+**User Interface**
 
 - Gradio
 
-### APIs
+**API Integration**
 
 - OpenWeatherMap API
-
-### Concepts
-
-- Expert Systems
-- Knowledge Representation
-- Inference Engines
-- Financial Modeling
-- Weather Integration
 
 ---
 
@@ -188,24 +121,23 @@ Pakistan-Solar-ROI-Advisor/
 This project strengthened my understanding of:
 
 - Expert Systems
+- Knowledge Representation
 - Rule-Based Artificial Intelligence
 - Backward and Forward Chaining
-- Knowledge Representation
 - Integrating Python with SWI-Prolog
 - API Integration
 - Financial Modeling
-- Designing AI-powered decision support systems for real-world applications
+- Building AI-powered decision support systems
 
 ---
 
 ## Future Improvements
 
-- Lithium-ion battery recommendations
 - Net-metering calculations
-- Support for additional Pakistani cities
+- Lithium-ion battery recommendations
+- Additional Pakistani cities
 - Multi-day weather forecasting
 - PDF report generation
-- Dynamic electricity tariff updates
 - Machine learning-based energy demand prediction
 
 ---
