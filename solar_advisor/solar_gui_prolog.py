@@ -11,7 +11,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent.absolute()
 
 # ========== WEATHER API ==========
-WEATHER_API_KEY = "091e2c93af6924324327d0e91f2b8f1b"
+WEATHER_API_KEY = " "
 
 # ========== PANEL DATA ==========
 PANEL_DATA = {
